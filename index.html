@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Screenshots!</title>
+</head>
+<body>
+<h1>Screenshots!</h1>
+<div id="container">
+
+</div>
+</body>
+<script type="text/javascript">
+var xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        if(xhr.status === 200) {
+            responseObject = JSON.parse(xhr.responseText);
+
+            // Build up strings
+            var newContent='';
+            for (var i = 0; i < responseObject.length; i++) { // Loop through items
+                newContent += '<ul class="items">';
+                if ( responseObject[i].hasOwnProperty('screenshotUris')) {
+                    if ( responseObject[i].screenshotUris[0].hasOwnProperty('uri')) { 
+                        newContent += '<li><strong>Game Title:</strong> ' + responseObject[i].titleName +  '<br><strong>Download:</strong> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '">Download</a> (' + responseObject[i].screenshotUris[0].fileSize + ' kb)<br><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '" width="300px" height="200px"></li>';
+                    } else {
+                        newContent += '<li>No URI for screenshotUris</li>';
+                    }
+                } else { 
+                    newContent += '<li>No ScreenshotURI Property</li>'; 
+                }
+                newContent += '</ul>';
+            }
+            // Update page
+            document.getElementById('container').innerHTML = newContent;
+        }
+    };
+    xhr.open('GET', 'data.json', true);
+    xhr.send(null);
+</script>
+</html>

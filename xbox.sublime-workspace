@@ -1,0 +1,365 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data.json",
+			"settings":
+			{
+				"buffer_size": 156924,
+				"line_ending": "Unix",
+				"name": "[{\"screenshotId\":\"95ee50ce-d030-49ff-9f4c-acb9d80c"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Mike/Desktop/Work/Xbox/www.xboxlive.dev"
+	],
+	"file_history":
+	[
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_edit.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_edit.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/comments/comment_item.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/comments/comment_item.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/posts_page.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/comments/comment_submit.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/comments/comment_submit.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_page.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/lib/router.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/application/not_found.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/helpers/config.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_item.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/application/layout.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/lib/permissions.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/lib/collections/notifications.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_item.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/helpers/errors.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/public/stylesheets/style.css",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/server/publications.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/server/fixtures.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/lib/collections/comments.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/lib/collections/posts.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/posts_list.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_submit.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_submit.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/notifications/notifications.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/notifications/notifications.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/includes/header.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/includes/errors.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/includes/errors.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/application/layout.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/main.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/.meteor/release",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/.meteor/local/build/programs/server/app/lib/collections/posts.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/.meteor/packages",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/includes/access_denied.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/main.js",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_items.html",
+		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/posts_list.html",
+		"/Users/Mike/Desktop/Learning/Apps/dinner/dinner.js",
+		"/Users/Mike/Desktop/Learning/Apps/dinner/dinner.html",
+		"/Users/Mike/Desktop/Learning/javascripting/rounding-numbers.js",
+		"/Users/Mike/Desktop/Learning/javascripting/numbers.js",
+		"/Users/Mike/Desktop/Learning/javascripting/revising-strings.js",
+		"/Users/Mike/Desktop/Learning/javascripting/number-to-string.js",
+		"/Users/Mike/Desktop/Learning/javascripting/if-statement.js",
+		"/Users/Mike/Desktop/Learning/node/program.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1140,
+								1140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156924,
+								156924
+							]
+						],
+						"settings":
+						{
+							"auto_name": "[{\"screenshotId\":\"95ee50ce-d030-49ff-9f4c-acb9d80c",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 1085669.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "xbox.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"post_item.js",
+				"client/templates/posts/post_item.js"
+			],
+			[
+				"fixture",
+				"server/fixtures.js"
+			],
+			[
+				"routr.js",
+				"lib/router.js"
+			],
+			[
+				"posts.js",
+				"lib/collections/posts.js"
+			],
+			[
+				"post_ei",
+				"client/templates/posts/post_edit.js"
+			],
+			[
+				"post_edit",
+				"client/templates/posts/post_edit.html"
+			],
+			[
+				"post_submit",
+				"client/templates/posts/post_submit.js"
+			],
+			[
+				"post_sub",
+				"client/templates/posts/post_submit.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
