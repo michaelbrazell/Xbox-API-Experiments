@@ -58,28 +58,23 @@ var xhr = new XMLHttpRequest();
             // Build up strings
             var newContent='';
             for (var i = 0; i < responseObject.length; i++) { // Loop through items
-                newContent += '<div class="col-xs-12 col-sm-4">';
-                // Check to see whether screenshotUris exists in json file for each item
-                if ( responseObject[i].hasOwnProperty('screenshotUris')) {
-                    // Check to see whether screenshotUris has the uri key for each item
-                    if ( responseObject[i].screenshotUris[0].hasOwnProperty('uri')) { 
-                        // build list item with game date, screenshot, and download button
-                        newContent += '<div class="thumbnail"><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '"><div class="caption"><h3>' + i + '. ' + responseObject[i].titleName +  '</h3><p>Date Taken: ' + responseObject[i].dateTaken +'<br>Size: ' + responseObject[i].screenshotUris[0].fileSize + ' bytes</p><p><a class="btn btn-primary" role="button" href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '">Download</a> <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#modal_'+ responseObject[i].screenshotId +'">Open</a><br> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '" class="dropbox-saver">Save</a><p></div></div><div class="modal fade" id="modal_'+ responseObject[i].screenshotId +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="myModalLabel">'+ responseObject[i].titleName +', Date Taken: ' + responseObject[i].dateTaken +'</h4></div><div class="modal-body"><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '"></div></div></div></div>';
-                    } else {
-                        // If no uri key
-                        newContent += '<div class="item">No URI for screenshotUris</div>';
-                    }
-                } else { 
-                    // if no screenshotUri
-                    newContent += '<div class="item">No ScreenshotURI Property</div>'; 
+                if ( responseObject[i]screenshotUris[0] !== undefined ) {
+                    var screenshotUri = responseObject[i].screenshotUris[0].uri.split('?')[0];
+                } else {
+                    var screenshotUri = 'Sorry this screenshot does not exist';
                 }
+                newContent += '<div class="col-xs-12 col-sm-4">';
+                
+                        // build list item with game date, screenshot, and download button
+                        newContent += '<div class="thumbnail"><img src="' + screenshotUri + '"><div class="caption"><h3>' + i + '. ' + responseObject[i].titleName +  '</h3><p>Date Taken: ' + responseObject[i].dateTaken +'<br>Size: ' + responseObject[i].screenshotUris[0].fileSize + ' bytes</p><p><a class="btn btn-primary" role="button" href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '">Download</a> <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#modal_'+ responseObject[i].screenshotId +'">Open</a><br> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '" class="dropbox-saver">Save</a><p></div></div><div class="modal fade" id="modal_'+ responseObject[i].screenshotId +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="myModalLabel">'+ responseObject[i].titleName +', Date Taken: ' + responseObject[i].dateTaken +'</h4></div><div class="modal-body"><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '"></div></div></div></div>';
+                    
                 newContent += '</div>';
             }
             // Update page
             document.getElementById('screenshots').innerHTML = newContent;
         }
     };
-    xhr.open('GET', 'data/data.json', true);
+    xhr.open('GET', 'data/michaelbrazell_screenshots.json', true);
     xhr.send(null);
 </script>
 <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="sxy8oe71pk1gqkd"></script>
