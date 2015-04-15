@@ -57,31 +57,24 @@ var xhr = new XMLHttpRequest();
 
             // Build up strings
             var newContent='';
-            for (var i = 0; i < responseObject.length; i++) { // Loop through items
-                if (responseObject[i].screenshotUris[0] !== undefined) {
-                    var title = responseObject[i].titleName;
+            for (var i = 0; i < responseObject.length; i++) { 
+                if (responseObject[i].screenshotUris[0] !== undefined) { 
                     var screenshotUri = responseObject[i].screenshotUris[0].uri.split('?')[0];
-                    var fileSize = responseObject[i].screenshotUris[0].fileSize;
                 } else {
-                    var title = 'Sorry there was an error processing this screenshot';
-                    var screenshotUri = 'Sorry there was an error processing this screenshot';
-                    var fileSize = 'Sorry there was an error processing this screenshot';
+                    var sreenshotUri = 'There is no screenshot';
                 }
+                var title = responseObject[i].titleName;
                 newContent += '<div class="col-xs-12 col-sm-4">';
-                
-                        // build list item with game date, screenshot, and download button
-                        newContent += '<div class="thumbnail"><img src="' + screenshotUri + '"><div class="caption"><h3>' + i + '. ' + title +  '</h3><p>Date Taken: ' + responseObject[i].dateTaken +'<br>Size: ' + fileSize + ' bytes</p><p><a class="btn btn-primary" role="button" href="' + screenshotUri + '">Download</a> <a class="btn btn-primary" role="button" data-toggle="modal" data-target="#modal_'+ responseObject[i].screenshotId +'">Open</a><br> <a href="' + screenshotUri + '" class="dropbox-saver">Save</a><p></div></div><div class="modal fade" id="modal_'+ responseObject[i].screenshotId +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title" id="myModalLabel">'+ responseObject[i].titleName +', Date Taken: ' + responseObject[i].dateTaken +'</h4></div><div class="modal-body"><img src="' + screenshotUri + '"></div></div></div></div>';
-                    
+                newContent += 'Screenshot URI: '+ screenshotUri + '<br>Title: ' + title;
                 newContent += '</div>';
             }
             // Update page
             document.getElementById('screenshots').innerHTML = newContent;
         }
     };
-    xhr.open('GET', 'data/michaelbrazell_screenshots.json', true);
+    xhr.open('GET', 'data/test-data.json', true);
     xhr.send(null);
 </script>
-<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="sxy8oe71pk1gqkd"></script>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </html>
