@@ -3,33 +3,20 @@
 	{
 		"selected_items":
 		[
+			[
+				"sc",
+				"screenshotUri"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1140,
+				"buffer_size": 5045,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "data.json",
-			"settings":
-			{
-				"buffer_size": 156924,
-				"line_ending": "Unix",
-				"name": "[{\"screenshotId\":\"95ee50ce-d030-49ff-9f4c-acb9d80c"
 			}
 		}
 	],
@@ -70,10 +57,11 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Mike/Desktop/Work/Xbox/www.xboxlive.dev"
+		"/Users/michaelmurray/Desktop/Work/Xbox/Xbox-API-Experiments"
 	],
 	"file_history":
 	[
+		"/Users/michaelmurray/Desktop/Work/Xbox/Xbox-API-Experiments/data.json",
 		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_edit.js",
 		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/posts/post_edit.html",
 		"/Users/Mike/Desktop/Learning/Apps/microscope/client/templates/comments/comment_item.js",
@@ -155,52 +143,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1140,
+						"buffer_size": 5045,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1140,
-								1140
+								4537,
+								4537
 							]
 						],
 						"settings":
@@ -210,36 +170,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "data.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 156924,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156924,
-								156924
-							]
-						],
-						"settings":
-						{
-							"auto_name": "[{\"screenshotId\":\"95ee50ce-d030-49ff-9f4c-acb9d80c",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 1085669.0,
-						"translation.y": 0.0,
+						"translation.y": 544.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
