@@ -1,11 +1,26 @@
 <html>
 <head>
     <title>Screenshots!</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .item { margin-bottom: 20px;}
+    .item img {max-width: 100%; max-height: 270px; }
+    </style>
 </head>
 <body>
-<h1>Screenshots!</h1>
-<div id="container">
-
+<div class="container">
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Screenshots</h1>
+        <p class="lead">This page is looping through available screenshots for the XBL username <em>michaelbrazell</em></p>.  The functionality to pull by username doesn't work, so this button here does nothing.
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Enter new XBL username</a></p>
+    </div>
+    <div class="row">
+        <div id="screenshots"></div>
+    </div>
+    <footer class="footer">
+        <p>&copy; <a href="http://michaelbrazell.github.com" target="_blank">Mike Murray</a>, 2015</p>
+      </footer>
 </div>
 </body>
 <script type="text/javascript">
@@ -17,23 +32,29 @@ var xhr = new XMLHttpRequest();
             // Build up strings
             var newContent='';
             for (var i = 0; i < responseObject.length; i++) { // Loop through items
-                newContent += '<ul class="items">';
+                newContent += '<div class="col-xs-12 col-sm-4">';
+                // Check to see whether screenshotUris exists in json file for each item
                 if ( responseObject[i].hasOwnProperty('screenshotUris')) {
+                    // Check to see whether screenshotUris has the uri key for each item
                     if ( responseObject[i].screenshotUris[0].hasOwnProperty('uri')) { 
-                        newContent += '<li><strong>Game Title:</strong> ' + responseObject[i].titleName +  '<br><strong>Download:</strong> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '">Download</a> (' + responseObject[i].screenshotUris[0].fileSize + ' kb)<br><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '" width="300px" height="200px"></li>';
+                        // build list item with game date, screenshot, and download button
+                        newContent += '<div class="item"><strong>Game Title:</strong> ' + responseObject[i].titleName +  '<br><strong>Download:</strong> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '">Download</a> (' + responseObject[i].screenshotUris[0].fileSize + ' kb)<br><strong>Save to Dropbox:</strong> <a href="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '" class="dropbox-saver">Save</a><br><img src="' + responseObject[i].screenshotUris[0].uri.split('?')[0] + '"></div>';
                     } else {
-                        newContent += '<li>No URI for screenshotUris</li>';
+                        // If no uri key
+                        newContent += '<div class="item">No URI for screenshotUris</div>';
                     }
                 } else { 
-                    newContent += '<li>No ScreenshotURI Property</li>'; 
+                    // if no screenshotUri
+                    newContent += '<div class="item">No ScreenshotURI Property</div>'; 
                 }
-                newContent += '</ul>';
+                newContent += '</div>';
             }
             // Update page
-            document.getElementById('container').innerHTML = newContent;
+            document.getElementById('screenshots').innerHTML = newContent;
         }
     };
     xhr.open('GET', 'data.json', true);
     xhr.send(null);
 </script>
+<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="sxy8oe71pk1gqkd"></script>
 </html>
